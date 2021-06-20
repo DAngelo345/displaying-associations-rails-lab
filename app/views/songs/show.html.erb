@@ -1,14 +1,20 @@
 
 
-<h1> <%= @song.title %>% </h1>
+
+<h1> SONG SHOW PAGE </h1>
+
+<%= @song.title %>
+
+<%# <%binding.pry %> 
 
 
- <ul>
- <%  @song.each do |song| %>
-<%# <%binding.pry%> 
- <li><%= link_to song.title, song_path(song)%></li>
+
+
+
+
+<%= link_to @song.artist_name, artist_path(@song.artist) %>
+
+
 
  
- <%end%>
-
- </ul>
+ 
