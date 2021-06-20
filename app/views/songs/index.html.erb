@@ -1,0 +1,6 @@
+
+<h1> SONGS INDEX </h1>
+<% @song.each do |song| %>
+<% binding.pry %>
+  <li><%= link_to song.artist_name, song_path(@song) %> - <%= song.title %></li>
+<% end %>
